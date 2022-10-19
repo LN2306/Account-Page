@@ -1,0 +1,88 @@
+#divmain {
+    border-radius: 5%;
+    border: 4px solid black;
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+}
+#divgroup {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#divtitle{
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#divel {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#logoutimg{
+    width: auto;
+    height: auto;
+    max-width: 30px;
+    max-height: 30px;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+}
+
+button.logout{
+    background-color:#da4961;
+    border-radius: 10%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+button.logout:hover{
+    background-color: rgb(255, 0, 0);
+    border-radius: 10%;
+    transition: 0.2s;
+}
+
+img{
+    width: auto;
+    height: auto;
+    max-width: 80px;
+    max-height: 80px;
+}
+
+button.grid {
+    background-color: rgb(111, 111, 240);
+    border: blue;
+    color: black;
+    border-radius: 15%;
+    padding: 15px 32px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    border: 5px blue;
+    background-color: white;
+    transition: 0.2s ease;
+    
+}
