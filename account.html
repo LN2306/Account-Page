@@ -8,46 +8,48 @@
     <title>Account</title>
 </head>
 <body>
-    <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'info')">Account Information</button>
-        <button class="tablinks" onclick="openCity(event, 'password')">Password Update</button>
-    </div>
-      
-      <!-- Tab content -->
-    <div id="info" class="tabcontent">
-        <form>
-            <p>
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email"><br>
-            </p>
-            <p>
-                <label for="phone">Phone:</label>
-                <input type="text" id="phone" name="phone"><br>
-            </p>
-            <p>
-                <label for="fname">First Name:</label>
-                <input type="text" id="fname" name="fname"><br>
-            </p>
-            <p>    
-                <label for="lname">Last Name:</label>
-                <input type="text" id="lname" name="lname"><br>
-            </p>
-                <button id="submit" onclick="alert('Your information has been updated')";>Submit</button> 
-        </form>
-    </div>
-      
-    <div id="password" class="tabcontent">
-        <form>
-            <p>
-                <label for="newpw">New Password:</label>
-                <input type="password" id="newpw" name="newpw" style="-webkit-text-security: circle"><br>
-            </p>
-            <p>    
-                <label for="conpw">Confirm New Password:</label>
-                <input type="password" id="conpw" name="conpw" style="-webkit-text-security: circle"><br>
-            </p>
-                <button id="submit" onclick="checkPW()";>Submit</button>
-        </form>
+    <div id="divmain">
+        <div class="tab">
+            <button title="View and Edit Account Information" class="tablinks" onclick="openCity(event, 'info')">Account Information</button>
+            <button class="tablinks" onclick="openCity(event, 'password')">Password Update</button>
+        </div>
+        
+        <!-- Tab content -->
+        <div id="info" class="tabcontent">
+            <form>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email"><br>
+                </p>
+                <p>
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone"><br>
+                </p>
+                <p>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname"><br>
+                </p>
+                <p>    
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname"><br>
+                </p>
+                    <button id="submit" onclick="alert('Your information has been updated')";>Submit</button> 
+            </form>
+        </div>
+        
+        <div id="password" class="tabcontent">
+            <form>
+                <p>
+                    <label for="newpw">New Password:</label>
+                    <input type="password" id="newpw" name="newpw" style="-webkit-text-security: circle"><br>
+                </p>
+                <p>    
+                    <label for="conpw">Confirm New Password:</label>
+                    <input type="password" id="conpw" name="conpw" style="-webkit-text-security: circle"><br>
+                </p>
+                    <button id="submit" onclick="checkPW()";>Submit</button>
+            </form>
+        </div>
     </div>
 
     <script>
