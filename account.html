@@ -32,7 +32,7 @@
                 <label for="lname">Last Name:</label>
                 <input type="text" id="lname" name="lname"><br>
             </p>
-                <button id="submit" onclick="alert('Your information has been updated');";>Submit</button> 
+                <button id="submit" onclick="alert('Your information has been updated')";>Submit</button> 
         </form>
     </div>
       
@@ -75,13 +75,13 @@
         function checkPW(){
             var newpw = document.getElementById("newpw").value;
             var conpw = document.getElementById("conpw").value;
-            var check = newpw.localeCompare(conpw);
-            if (check == 0){
-                alert('Your password has been changed');
-            }
+            if (newpw.length == 0 || conpw.lenght == 0) {alert('Required field is empty');}
             else{
-                alert('The confirmation password does not match');
+                var check = newpw.localeCompare(conpw);
+                if (check == 0){alert('Your password has been changed');}
+                else{alert('The confirmation password does not match');}
             }
+
         }
     </script>
     
