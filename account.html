@@ -9,25 +9,45 @@
 </head>
 <body>
     <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+        <button class="tablinks" onclick="openCity(event, 'info')">Account Information</button>
+        <button class="tablinks" onclick="openCity(event, 'password')">Password Update</button>
     </div>
       
       <!-- Tab content -->
-    <div id="London" class="tabcontent">
-        <h3>London</h3>
-        <p>London is the capital city of England.</p>
+    <div id="info" class="tabcontent">
+        <form>
+            <p>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"><br>
+            </p>
+            <p>
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone"><br>
+            </p>
+            <p>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname"><br>
+            </p>
+            <p>    
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname"><br>
+            </p>
+                <button id="submit" onclick="alert('Your information has been updated');";>Submit</button> 
+        </form>
     </div>
       
-    <div id="Paris" class="tabcontent">
-        <h3>Paris</h3>
-        <p>Paris is the capital of France.</p>
-    </div>
-      
-    <div id="Tokyo" class="tabcontent">
-        <h3>Tokyo</h3>
-        <p>Tokyo is the capital of Japan.</p>
+    <div id="password" class="tabcontent">
+        <form>
+            <p>
+                <label for="newpw">New Password:</label>
+                <input type="password" id="newpw" name="newpw" style="-webkit-text-security: circle"><br>
+            </p>
+            <p>    
+                <label for="conpw">Confirm New Password:</label>
+                <input type="password" id="conpw" name="conpw" style="-webkit-text-security: circle"><br>
+            </p>
+                <button id="submit" onclick="checkPW()";>Submit</button>
+        </form>
     </div>
 
     <script>
@@ -51,6 +71,18 @@
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
             } 
+        
+        function checkPW(){
+            var newpw = document.getElementById("newpw").value;
+            var conpw = document.getElementById("conpw").value;
+            var check = newpw.localeCompare(conpw);
+            if (check == 0){
+                alert('Your password has been changed');
+            }
+            else{
+                alert('The confirmation password does not match');
+            }
+        }
     </script>
     
 </body>

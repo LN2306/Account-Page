@@ -3,6 +3,7 @@
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
+    box-sizing: border-box;
   }
   
   /* Style the buttons that are used to open the tab content */
@@ -33,3 +34,13 @@
     border: 1px solid #ccc;
     border-top: none;
   } 
+
+  form {display: table;}
+  p {display: table-row;}
+  label {display: table-cell;}
+  input {
+    display: table-cell;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 10px;
+  }
