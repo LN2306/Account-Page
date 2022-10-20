@@ -41,10 +41,11 @@ body{
 }
 
 button.logout{
-    background-color:#da4961;
-    border-radius: 10%;
+    background-color: inherit;
+    border:none;
     margin-top: 2px;
     margin-bottom: 2px;
+    justify-content: right;
 }
 
 button.logout:hover{
