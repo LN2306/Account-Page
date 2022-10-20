@@ -4,9 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/support.css">
     <title>Support Center</title>
 </head>
 <body>
+    <div id="divmain">
+        <div class="tab">
+            <button title="Submit a ticket for your issue" class="tablinks" onclick="openCity(event, 'issue')">Submit a Claim</button>
+            <button title="Submit a proof request before placing an order" class="tablinks" onclick="openCity(event, 'proof')">Proof Request</button>
+            <a href="index.html">
+                <button class="tablinks">Back to main</button>
+            </a>
+        </div>
+        
+        <!-- Tab content -->
+        <div id="issue" class="tabcontent">
+            <form>
+                <p>
+                    <label for="OrderNum">Order Number</label>
+                    <input type="text" id="OrderNum" name="OrderNum"><br>
+                </p>
+                <p>
+                    <label for="desc">Description:</label>
+                    <textarea id="desc" name="desc" rows="3" cols="40" wrap="soft" placeholder="Please describe in details the issues you're having with the product (e.g. printing quality, shipping issue, faulty hardware, etc."></textarea>
+
+                </p>
+                <p>
+                    <label for="deadline">Deadline:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Please provide a deadline for the replacement."><br>
+                </p>
+                    <button id="submit" onclick="alert('The claim has been submitted, we will reach out to you as soon as we can.')";>Submit</button> 
+            </form>
+        </div>
+        
+        <div id="proof" class="tabcontent">
+            <form>
+                <p>
+                    <label for="product">Product</label>
+                    <input id="product" name="product" placeholder="Please provide product's name and dimensions (if applicable)"><br>
+                </p>
+                    <button id="submit" onclick="alert('The proof request has been submitted, we will reach out to you as soon as we can')";>Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function openCity(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+    </script>
     
 </body>
 </html>

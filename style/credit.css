@@ -1,9 +1,9 @@
 #divmain {
     border-radius: 5%;
-    border: 4px solid black;
+    border: 7px solid black;
     background-color: white;
-    width: fit-content;
-    height: fit-content;
+    width: 365px;
+    height: 380px;
 }
 
 img{
@@ -12,6 +12,8 @@ img{
     max-width: 10px;
     max-height: 10px;
     background-color: inherit;
+    padding-left: 2px;
+    padding-top: 3px;
 }
 
 button{
@@ -19,6 +21,8 @@ button{
     border-color: rgb(111,111,240);
     background-color: rgb(111,111,240);
     align-items: center;
+    margin-left: 3px;
+    margin-top: 5px;
 }
 
 body{
