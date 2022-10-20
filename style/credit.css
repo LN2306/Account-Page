@@ -33,8 +33,14 @@ body{
 
 }
 
-h2{font-size: 25px;}
-h4{font-size: 18px;}
+h2{
+    font-size: 25px;
+    margin-left: 5px;
+}
+h4{
+    font-size: 18px;
+    margin-left: 3px;
+}
 
 
 table {

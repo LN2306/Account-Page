@@ -4,7 +4,7 @@
     background-color: white;
     align-items: center;
     margin: auto;
-    width: 400px;
+    width: 365px;
     height: 380px;
 }
 #divgroup {
@@ -30,6 +30,7 @@
     max-height: 30px;
     margin-left: auto;
     margin-right: 0px;
+    
 }
 
 body{
@@ -48,6 +49,7 @@ button.logout{
     margin-top: 2px;
     margin-bottom: 2px;
     justify-content: right;
+    float: right;
 }
 
 button.logout:hover{

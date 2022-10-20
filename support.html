@@ -23,20 +23,21 @@
         <div id="issue" class="tabcontent">
             <form>
                 <p>
-                    <label for="OrderNum">Order Number</label>
+                    <label for="OrderNum">Order Number:</label>
                     <input type="text" id="OrderNum" name="OrderNum"><br>
                 </p>
                 <p>
                     <label for="desc">Description:</label>
-                    <textarea id="desc" name="desc" rows="3" cols="40" wrap="soft" placeholder="Please describe in details the issues you're having with the product (e.g. printing quality, shipping issue, faulty hardware, etc."></textarea>
+                    <textarea id="desc" name="desc" rows="3" cols="35" wrap="soft" placeholder="Please describe in details the issues you're having with the product (e.g. printing quality, shipping issue, faulty hardware, etc."></textarea>
 
                 </p>
                 <p>
                     <label for="deadline">Deadline:</label>
-                    <input type="text" id="fname" name="fname" placeholder="Please provide a deadline for the replacement."><br>
+                    <input type="date" id="fname" name="fname" placeholder="Please provide a deadline for the replacement."><br>
                 </p>
-                    <button id="submit" onclick="alert('The claim has been submitted, we will reach out to you as soon as we can.')";>Submit</button> 
+
             </form>
+            <button id="submit" onclick="alert('The claim has been submitted, we will reach out to you as soon as we can.')";>Submit</button> 
         </div>
         
         <div id="proof" class="tabcontent">
@@ -45,8 +46,10 @@
                     <label for="product">Product</label>
                     <input id="product" name="product" placeholder="Please provide product's name and dimensions (if applicable)"><br>
                 </p>
-                    <button id="submit" onclick="alert('The proof request has been submitted, we will reach out to you as soon as we can')";>Submit</button>
+                    <label for="visualproof">Artwork</label>
+                    <input id="fileinput" type="File"><br>  
             </form>
+            <button id="submit" onclick="alert('The proof request has been submitted, we will reach out to you as soon as we can')";>Submit</button>
         </div>
     </div>
 
