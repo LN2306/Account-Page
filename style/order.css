@@ -35,8 +35,7 @@ button{
     border-color: rgb(111,111,240);
     background-color: rgb(111,111,240);
     align-items: center;
-    margin-top: 3px;
-    margin-left: 2px;
+    float:right;
 }
 
 img{

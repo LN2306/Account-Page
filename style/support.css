@@ -73,5 +73,23 @@
 
   label{
     text-align: left;
-    float: top;
   }
+
+  img{
+    width: auto;
+    height: auto;
+    max-width: 10px;
+    max-height: 10px;
+    background-color: inherit;
+}
+
+#back{
+    border-radius: 30%;
+    border-color: rgb(111,111,240);
+    background-color: rgb(111,111,240);
+    align-items: center;
+    float:right;
+  }
+#back:hover{
+  background-color: #ddd;
+}
