@@ -3,7 +3,8 @@
     border: 7px solid black;
     background-color: white;
     align-items: center;
-    width: 365px;
+    margin: auto;
+    width: 400px;
     height: 380px;
 }
 #divgroup {

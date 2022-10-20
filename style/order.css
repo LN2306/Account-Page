@@ -17,7 +17,18 @@ body{
 th, td{
     padding-left: 10px;
     padding-right: 10px;
+    align-content: center;
+    text-align: center;
 }
+
+table {
+    margin-top: 15px;
+    border: black;
+    border-collapse: collapse;
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    width: 100%;
+  }
 
 button{
     border-radius: 30%;
