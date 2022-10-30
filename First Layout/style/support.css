@@ -5,6 +5,8 @@
   width: 365px;
   height: 380px;
 }
+
+
 /* Style the tab */
  .tab {
     border-radius: 10%;
@@ -13,6 +15,15 @@
     background-color: rgb(111,111,240);
     box-sizing: border-box;
   }
+
+#submit{
+  float: left;
+  margin-top: 10px;
+}
+
+#fileinput{
+  float:left;
+}
   
   /* Style the buttons that are used to open the tab content */
   .tab button {
@@ -44,7 +55,7 @@
   #desc{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
-    resize:both;
+    resize:none;
     padding-left: 2px;
     margin-left: 10px;
 
@@ -52,13 +63,19 @@
 
   form {display: table;}
   p {display: table-row;}
-  label {display: table-cell;}
+  label {
+    display: table-cell;
+    text-align: left;
+    font-size: 13px;
+    margin-right: 20px;
+  }
   input {
     font-family: Arial, Helvetica, sans-serif;
     display: table-cell;
     margin-top: 3px;
     margin-bottom: 3px;
     margin-left: 10px;
+    float: center;
   }
 
   body{
@@ -69,10 +86,6 @@
     align-items: center;
     justify-content: center;
     display: flex;
-  }
-
-  label{
-    text-align: left;
   }
 
   img{
